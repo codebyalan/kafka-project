@@ -1,0 +1,15 @@
+
+server:
+  port: 9192
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      group-id: java-group
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+group: java_group
+topic: java-top
